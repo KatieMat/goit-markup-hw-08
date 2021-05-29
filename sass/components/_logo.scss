@@ -1,0 +1,40 @@
+// .header__logo--position {
+//     // margin-right: 93px;
+//     // padding-top: 24px;
+//     // padding-bottom: 25px;
+//     @media screen and (max-width:767px){
+//         padding-top: 16px;
+//         padding-bottom: 16px;
+        
+//     }
+// }
+
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: Raleway;
+    text-decoration: none;
+
+    &:visited {
+        color: $text;
+    }
+}
+
+.logo--accent {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: $accent-color;
+}
+
+.logo--inversion {
+    color: #ffffff;
+}
+
+.footer__logo--position {
+    display: inline-block;
+    margin-bottom: 20px;
+    
+
+}

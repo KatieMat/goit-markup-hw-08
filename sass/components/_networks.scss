@@ -1,0 +1,51 @@
+.networks {
+    display: inline-flex;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.networks--position {
+    display: flex;
+    justify-content: center;
+}
+
+.networks__link {
+    justify-content: center;
+    align-items: center;
+
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+.networks__link--color {
+    background-color:#FFFFFF10;
+}
+.networks__icon {
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .networks__link:hover &,
+    .networks__link:focus & {
+        fill: #fff; 
+    }
+}
+
+.networks__icon--fill {
+    fill: #FFFFFF;
+}
