@@ -10,6 +10,8 @@
 //     //     margin-right: 50px;
 //     // }
     @media (max-width:767px){
+        position: absolute;
+        bottom: 134px;
         display: flex;
         flex-direction: column-reverse;
     }
