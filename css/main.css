@@ -1560,7 +1560,7 @@ img {
 }
 
 .button_menu {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 10px;
   right: 15px;
