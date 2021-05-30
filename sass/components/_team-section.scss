@@ -1,19 +1,22 @@
 .team {
-    
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
+
         &__item:not(:last-child) {
             margin-bottom: 30px;
         }
     }
-    @media (min-width:768px) and (max-width:1199px){
+
+    @media (min-width:768px) and (max-width:1199px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: -30px;
         margin-top: -30px;
     }
-    @media (min-width:1200px){
+
+    @media (min-width:1200px) {
         display: flex;
-        &__item:not(:last-child){
+
+        &__item:not(:last-child) {
             margin-right: 30px;
         }  
     }
@@ -27,16 +30,17 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         width: 450px;
         height: 622px;
     }
-    @media (min-width:768px) and (max-width:1199px){
+
+    @media (min-width:768px) and (max-width:1199px) {
         width: 354px;
         height: 536px;
         margin-left: 30px;
         margin-top: 30px;
-     }
+    }
 }
 
 .cards__name {
@@ -59,13 +63,14 @@
     color: $sub-text;
 }
 
-.cards__img{
-    @media (max-width: 767px){
-    width: 450px;
-    height: 460px;      
+.cards__img {
+    @media (max-width: 767px) {
+        width: 450px;
+        height: 460px;      
     }
-    @media (min-width:768px) and (max-width:1199px){
+
+    @media (min-width:768px) and (max-width:1199px) {
         width: 354px;
         height: 374px;
-     }
+    }
 }

@@ -1,101 +1,109 @@
-.button_menu{
+.button_menu {
     position: fixed;
-    z-index: 2;
     top: 10px;
     right: 15px;
+    z-index: 2;
+    
     display: inline-flex;
-    padding: 0;
     margin: 0;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border: none;
+    padding: 0;
+    
     background-color: transparent;
+    border: none;
 
-    @media (min-width:768px){
+    @media (min-width:768px) {
         display: none;
     }
 }
-.button_menu .icon-cross{
+
+.button_menu .icon-cross {
     display: none;
 }
 
-.button_menu.is-open .icon-cross{
+.button_menu.is-open .icon-cross {
     display: block;
 }
 
-.button_menu.is-open .icon-menu{
+.button_menu.is-open .icon-menu {
     display: none;
 }
      
-
-
-.menu-container{
+.menu-container {
     
-    @media screen and (max-width:767px){
-        z-index: 1;
+    @media screen and (max-width:767px) {
         position: fixed;
-        display: none;
         top: 0;
         left: 0;
+        z-index: 1;
+        
+        display: none;
         width: 100vw;
         height: 100vh;
-        background-color: #FFFFFF;
         padding-top: 48px;
         padding-bottom: 48px;
         padding-left: 40px;
-        &.is-open{
+
+        background-color: #FFFFFF;
+
+        &.is-open {
             display: block;
         }
     }
-    @media (min-width:768px) and (max-width:1199px){
+
+    @media (min-width:768px) and (max-width:1199px) {
         position: absolute;
         top: 0;
         right: 15px;
+
         display: flex;
         height: 80px;
     }
-    @media (min-width:1200px){
+
+    @media (min-width:1200px) {
         display: flex;
         margin-left: 93px;
     }
 }
 
-
-.media{
+.media {
     position: absolute;
     bottom: 48px;
+
     display: flex;
     flex-direction: row;
     margin-top: 64px;
 
-    @media (min-width:768px){
+    @media (min-width:768px) {
         display: none;
     }
 
-    
+    &__item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
 
-    &__item{
-        
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: $accent-color;
+        color: $accent-color;
     }
 
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
         padding-right: 10px;
+
         border-right: 1px solid rgba(33, 33, 33, 0.2);;
     }
-    &__item:not(:first-child){
+
+    &__item:not(:first-child) {
         padding-left: 10px;
     }
 
-    &__link{
+    &__link {
         text-decoration: none
     }
-    &__link:visited{
+
+    &__link:visited {
         color: inherit;
     }
 }
